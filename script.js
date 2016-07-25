@@ -1,6 +1,6 @@
 var quote = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
-var name = "Johnathan Mayer";
-var title = "Singer-Singwriter";
+var name = "John Smith";
+var title = "CTO, E Corporation";
 
 var wrapText = function(context, text, x, y, maxWidth, lineHeight) {
   var words = text.split(' ');
@@ -59,7 +59,7 @@ var renderContent = function() {
 
 window.setTimeout(function() {
   renderContent();
-}, 700)
+}, 500)
 document.getElementById('quoteBox').oninput = function() {
   quote = this.value;
   renderContent();
